@@ -24,9 +24,6 @@ const JoinOurTeam = () => {
         style={{
           marginTop: "-150px",
           height: "300px",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
         }}
         sx={{ backgroundColor: "#975CF1" }}
         item
@@ -34,7 +31,7 @@ const JoinOurTeam = () => {
         md={6}
       >
         <Typography
-          sx={{ marginTop: "10%", fontWeight: "bold", textAlign: "center" }}
+          sx={{ marginTop: "2px", fontWeight: "bold", textAlign: "center" }}
           variant="h3"
           gutterBottom
         >
@@ -48,21 +45,21 @@ const JoinOurTeam = () => {
           To get updated on new NFTs, Exclusive Drops, Live Auctions and more!
         </Typography>
         <form onSubmit={handelLogin}>
-          <Box sx={{ textAlign: "center", width: "100%", marginTop: "30px" }}>
+          <Box sx={{ textAlign: "center", width: "100%", marginTop: "10px" }}>
             <TextField
               id="standard-basic"
               label="Your Name"
-              sx={{ width: "70%", marginBottom: "8px" }}
+              sx={{ width: "60%", marginBottom: "8px" }}
             />
-
+            <br />
             <TextField
               id="standard-basic"
               label="Your Email"
-              sx={{ width: "70%", marginBottom: "8px", color: "#fff" }}
+              sx={{ width: "60%", marginBottom: "8px", color: "#fff" }}
             />
           </Box>
 
-          <Box sx={{ width: "60%", margin: "0px auto" }}>
+          <Box sx={{ width: "50px", margin: "-3px auto" }}>
             <Button
               sx={{ backgroundColor: "#fff", color: "#975CF1", width: "100%" }}
               color="inherit"
