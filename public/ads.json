@@ -1,0 +1,39 @@
+[
+    {
+      "id": "01",
+      "title": "Art",
+      
+      "img": "https://i.ibb.co/Fm69QGm/1.png"
+    },
+    {
+      "id": "02",
+      "title": "Music",
+    
+      "img": "https://i.ibb.co/sJyQ1QQ/2.png"
+    },
+    {
+      "id": "03",
+      "title": "Videos",
+     
+      "img": "https://i.ibb.co/QPsTYQD/3.png"
+    },
+    {
+      "id": "04",
+      "title": "collectibles",
+     
+      "img": "https://i.ibb.co/1vZkTMQ/4.png"
+    },
+    {
+      "id": "05",
+      "title": "Sports",
+    
+      "img": "https://i.ibb.co/xf9dPK0/5.png"
+    },
+    {
+      "id": "06",
+      "title": "Utility",
+     
+      "img": "https://i.ibb.co/XCyht9P/6.png"
+    }
+  ]
+  

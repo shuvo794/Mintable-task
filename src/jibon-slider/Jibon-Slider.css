@@ -1,0 +1,11 @@
+.jibon-slider__container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.title {
+    font-size: 2em;
+}
+.title span {
+  color: purple;
+}
