@@ -1,8 +1,8 @@
-import { Button, Container, Grid, List, ListItem, Typography } from '@mui/material';
+import { Grid, List, ListItem, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import { FaDiscord } from 'react-icons/fa';
-import { AiFillInstagram, AiOutlineReddit,AiFillTwitterCircle } from 'react-icons/ai';
+import {  AiOutlineReddit,AiFillTwitterCircle } from 'react-icons/ai';
 import logo from '../../image/log.png'
 import './Footer.css'
 const Footer = () => {
@@ -10,9 +10,9 @@ const Footer = () => {
         <Box className="footerStyle">
        
           <Grid container spacing={1}>
-            <Grid item xs={12} sm={6} md={3}>
-            <Typography
-             variant="h6" 
+            <Grid item xs={12}  md={3}>
+            <Box
+            
              sx={{ textAlign: 
              "left",justifyContent:'center',
              alignItems:'center',
@@ -21,40 +21,51 @@ const Footer = () => {
                 <Box
                   sx={{
                     color: "var(--color)",
-                    display: "inline-block",
+                    display: "flex",
+                    alignItems:'center',
                     fontWeight: "bold",
                   }}
                 >
                   {" "}
-                 <img  src={logo} alt=''/>
+                 <img style={{marginRight:'10px'}}   src={logo} alt=''/>
                   {" "}
+                  <Typography >
+Mintable
+  
+  </Typography>
                 </Box>{" "}
-                Mintable
-              </Typography>
-              <Typography variant="h6" sx={{ textAlign: "left", ml: 5 }}>
+                <Typography variant="h6" sx={{  }}>
              Join our Community
              </Typography>
-
-             <Box sx={{ ml: 5, mt: 1 }}>
-                <a
+             <Box>
+             <a
+             style={{marginRight:'-10px'}}
                   target="blank"
                   href="#"
                 >
                   <AiFillTwitterCircle className="footer-icons" />
                 </a>
-                <a target="blank" href="#">
+                <a style={{marginRight:'-10px'}} target="blank" href="#">
                   <AiOutlineReddit className="footer-icons" />
                 </a>
                 <a target="#">
                   <FaDiscord className="footer-icons" />
                 </a>
+             </Box>
               </Box>
+
+
+
+
+              
+
+             
             
 
             </Grid>
-            <Grid item xs={12} sm={6} md={2}>
+            <Grid  item xs={12}  md={1.5}>
             <List>
-              <Typography variant="h6" sx={{ textAlign: "left", ml: 1 }}>
+              <Typography variant="h6" >
                 {" "}
                 <Box
                   sx={{
@@ -70,26 +81,26 @@ const Footer = () => {
               </Typography>
               <ListItem className="footer-links">
                    
-                   <a style={{color:'#fff'}} href='#'>Create a Store</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px',}} href='#'>Create a Store</a>
                    </ListItem>
               <ListItem className="footer-links">
                   
-                   <a style={{color:'#fff'}} href='#'>List an Item for Sale</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'>List an Item for Sale</a>
                    </ListItem>
               <ListItem className="footer-links">
                  
-                   <a style={{color:'#fff'}} href='#'>  My Profile</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'>  My Profile</a>
                    </ListItem>
               <ListItem className="footer-links">
                    
-                   <a style={{color:'#fff'}} href='#'> Browse Digital Items</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'> Browse Digital Items</a>
                    </ListItem>
             </List>
           </Grid>
           
-          <Grid item xs={12} sm={6} md={2}>
+          <Grid item xs={12}  md={1.5}>
             <List>
-              <Typography variant="h6" sx={{ textAlign: "left", ml: 1 }}>
+              <Typography variant="h6" >
                 {" "}
                 <Box
                   sx={{
@@ -105,31 +116,31 @@ const Footer = () => {
               </Typography>
               <ListItem className="footer-links">
                    
-                   <a style={{color:'#fff'}} href='#'>Help and Support</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'>Help and Support</a>
                    </ListItem>
               <ListItem className="footer-links">
                   
-                   <a style={{color:'#fff'}} href='#'>FAQs</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'>FAQs</a>
                    </ListItem>
               <ListItem className="footer-links">
                  
-                   <a style={{color:'#fff'}} href='#'>  Chat with Us</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'>  Chat with Us</a>
                    </ListItem>
               <ListItem className="footer-links">
                    
-                   <a style={{color:'#fff'}} href='#'> Contact Us</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'> Contact Us</a>
                    </ListItem>
                    <ListItem className="footer-links">
                    
-                   <a style={{color:'#fff'}} href='#'> Seller's University</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'> Seller's University</a>
                    </ListItem>
                    <ListItem className="footer-links">
                    
-                   <a style={{color:'#fff'}} href='#'> Editorial</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'> Editorial</a>
                    </ListItem>
             </List>
           </Grid>
-          <Grid item xs={12} sm={6} md={2}>
+          <Grid item xs={12}  md={1.5}>
             <List>
               <Typography variant="h6" sx={{ textAlign: "left", ml: 1 }}>
                 {" "}
@@ -147,25 +158,25 @@ const Footer = () => {
               </Typography>
               <ListItem className="footer-links">
                    
-                   <a style={{color:'#fff'}} href='#'>Browse Digital Items</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'>Browse Digital Items</a>
                    </ListItem>
               <ListItem className="footer-links">
                   
-                   <a style={{color:'#fff'}} href='#'>FAQs</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'>FAQs</a>
                    </ListItem>
               <ListItem className="footer-links">
                  
-                   <a style={{color:'#fff'}} href='#'>  Browse Stores</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'>  Browse Stores</a>
                    </ListItem>
               <ListItem className="footer-links">
                    
-                   <a style={{color:'#fff'}} href='#'> Where to Buy NFTs</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'> Where to Buy NFTs</a>
                    </ListItem>
                    
                    
             </List>
           </Grid>
-          <Grid item xs={12} sm={6} md={2}>
+          <Grid item xs={12}  md={1.5}>
             <List>
               <Typography variant="h6" sx={{ textAlign: "left", ml: 1 }}>
                 {" "}
@@ -183,22 +194,22 @@ const Footer = () => {
               </Typography>
               <ListItem className="footer-links">
                    
-                   <a style={{color:'#fff'}} href='#'>Pro Services</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'>Pro Services</a>
                    </ListItem>
               <ListItem className="footer-links">
                   
-                   <a style={{color:'#fff'}} href='#'>College Athletes</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'>College Athletes</a>
                    </ListItem>
               <ListItem className="footer-links">
                  
-                   <a style={{color:'#fff'}} href='#'>  NFTs</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'>  NFTs</a>
                    </ListItem>
             
                    
                    
             </List>
           </Grid>
-          <Grid item xs={12} sm={6} md={2}>
+          <Grid item xs={12}  md={1.5}>
             <List>
               <Typography variant="h6" sx={{ textAlign: "left", ml: 1 }}>
                 {" "}
@@ -216,22 +227,22 @@ const Footer = () => {
               </Typography>
               <ListItem className="footer-links">
                    
-                   <a style={{color:'#fff'}} href='#'>Press and Media</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'>Press and Media</a>
                    </ListItem>
               <ListItem className="footer-links">
                   
-                   <a style={{color:'#fff'}} href='#'>Seller's University</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'>Seller's University</a>
                    </ListItem>
               <ListItem className="footer-links">
                  
-                   <a style={{color:'#fff'}} href='#'>  Editorial</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'>  Editorial</a>
                    </ListItem>
             
                    
                    
             </List>
           </Grid>
-          <Grid item xs={12} sm={6} md={2}>
+          <Grid item xs={12}  md={1.5}>
             <List>
               <Typography variant="h6" sx={{ textAlign: "left", ml: 1 }}>
                 {" "}
@@ -249,11 +260,11 @@ const Footer = () => {
               </Typography>
               <ListItem className="footer-links">
                    
-                   <a style={{color:'#fff'}} href='#'>Privacy Policy</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'>Privacy Policy</a>
                    </ListItem>
               <ListItem className="footer-links">
                   
-                   <a style={{color:'#fff'}} href='#'>Terms of Use</a>
+                   <a style={{color:'#fff',fontSize:'12px',marginBottom:'-24px'}} href='#'>Terms of Use</a>
                    </ListItem>
               
             

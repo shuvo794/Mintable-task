@@ -12,6 +12,8 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import logoTg from '../../../image/logo.2.png'
+import ModalSignUp from '../../ModalSignUp/ModalSignUp';
+import ModalLogIn from '../../ModalLogin/ModalLogIn';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -105,7 +107,20 @@ const Navigation = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+// Modal Sign Up
+const [openSignUp, setOpenSignUp] = React.useState(false);
+const handleOpenSignUp = () => setOpenSignUp(true);
+const handleCloseSignUp = () => setOpenSignUp(false);
+
+
+// Modal Login
+const [openLogin, setOpenLogin] = React.useState(false);
+const handleOpenLogin = () => setOpenLogin(true);
+const handleCloseLogin = () => setOpenLogin(false);
+
   return (
+   <>
     <Box sx={{ flexGrow: 1 }}>
     <AppBar  sx={{backgroundColor:'#fff'}}>
       <Toolbar>
@@ -177,14 +192,31 @@ const Navigation = () => {
        
       </StyledMenu>
       
-      <Button sx={{color:'#550DEE',marginLeft:'15px',marginRight:'10px',borderRadius:'5px',border:'1px solid #550DEE'}}>Login</Button>
-      <Button href='/signUp' sx={{background:'#550DEE',color:'#fff',marginLeft:'15px',marginRight:'10px',borderRadius:'5px'}}>Sign Up</Button>
+      <Button onClick={handleOpenLogin} sx={{color:'#550DEE',marginLeft:'15px',marginRight:'10px',borderRadius:'5px',border:'1px solid #550DEE'}}>Login</Button>
+      <Button onClick={handleOpenSignUp}  sx={{background:'#550DEE',color:'#fff',marginLeft:'15px',marginRight:'10px',borderRadius:'5px'}}>Sign Up</Button>
 
 
       </Toolbar>
     </AppBar>
    
   </Box>
+  <ModalSignUp
+  openSignUp={openSignUp}
+  handleCloseSignUp={handleCloseSignUp}
+  
+  >
+
+  </ModalSignUp>
+   <ModalLogIn
+   openLogin={openLogin}
+   handleCloseLogin={handleCloseLogin}
+   
+   
+   >
+
+   </ModalLogIn>
+
+   </>
   );
 };
 

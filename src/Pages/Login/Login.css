@@ -1,0 +1,9 @@
+.footer-icons {
+    font-size: 14px;
+    padding: 8px;
+    color: #fff;
+    background: var(--button-bg);
+    margin-right: 5px;
+    border-radius: 50%;
+    text-align: left;
+  }
