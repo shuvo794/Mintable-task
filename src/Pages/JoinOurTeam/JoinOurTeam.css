@@ -1,3 +1,6 @@
-#standard-basic{
-color: antiquewhite;
+/* input[type="label"] {
+    background: wheat;
+} */
+.inputText{
+    color: #fff;
 }

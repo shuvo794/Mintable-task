@@ -4,7 +4,9 @@ import { TextField } from "@mui/material";
 import { Box } from "@mui/material";
 import { Typography } from "@mui/material";
 import { Grid } from "@mui/material";
+
 import "./JoinOurTeam.css";
+
 const JoinOurTeam = () => {
   const handelLogin = (e) => {
     e.preventDefault();
@@ -23,7 +25,8 @@ const JoinOurTeam = () => {
       <Grid
         style={{
           marginTop: "-150px",
-          height: "300px",
+          padding: "40px",
+          borderRadius: "10px",
         }}
         sx={{ backgroundColor: "#975CF1" }}
         item
@@ -49,19 +52,38 @@ const JoinOurTeam = () => {
             <TextField
               id="standard-basic"
               label="Your Name"
-              sx={{ width: "60%", marginBottom: "8px" }}
+              sx={{
+                width: "100%",
+                marginBottom: "8px",
+                input: { border: "2px solid #fff", color: "#fff" },
+              }}
             />
             <br />
             <TextField
+              className="inputText"
               id="standard-basic"
               label="Your Email"
-              sx={{ width: "60%", marginBottom: "8px", color: "#fff" }}
+              type="text"
+              sx={{
+                width: "100%",
+                marginBottom: "8px",
+                input: {
+                  border: "2px solid #fff",
+                  color: "#fff",
+                },
+              }}
             />
           </Box>
 
-          <Box sx={{ width: "50px", margin: "-3px auto" }}>
+          <Box sx={{ width: "30%", margin: "0px auto", padding: "10px 0px" }}>
             <Button
-              sx={{ backgroundColor: "#fff", color: "#975CF1", width: "100%" }}
+              sx={{
+                backgroundColor: "#fff",
+                color: "#975CF1",
+                width: "100%",
+                padding: "10px 14px",
+                fontSize: "16px",
+              }}
               color="inherit"
               variant="contained"
             >
