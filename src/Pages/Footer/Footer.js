@@ -5,10 +5,13 @@ import { FaDiscord } from 'react-icons/fa';
 import {  AiOutlineReddit,AiFillTwitterCircle } from 'react-icons/ai';
 import logo from '../../image/log.png'
 import './Footer.css'
+import JoinOurTeam from '../JoinOurTeam/JoinOurTeam';
 const Footer = () => {
     return (
         <Box className="footerStyle">
-       
+      <Box >
+      <JoinOurTeam/>
+      </Box>
           <Grid container spacing={1}>
             <Grid item xs={12}  md={3}>
             <Box
